@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aprendiendo jQuery</title>
+    <!--
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+
+    Aquesta es una manera de posar jQuery, l'altra es clicar al link i guardar como l'arxiu js dins la carpeta del projecte, d'aquesta manera ens assegurem que funcioni sempre sense haver de cridar el jQuery de forma externa-->
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js-jq/01-selectores.js"></script>
+    <style>
+        .zebra{
+            border: 5px dashed black;
+        }
+        .grande{
+            font-size: 30px;
+        }
+        .margen-superior{
+            display: block;
+            margin-top: 45px;
+        }
+        .resaltado{
+            border-bottom: 2px solid lightpink;
+        }
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="https://www.google.com" title="Google">Ir a Google</a></li>
+        <li><a href="https://www.facebook.com" title="Facebook">Ir a Facebook</a></li>
+    </ul>
+
+    <h1>Apuntes y ejercicios con jQuery</h1>
+    <p id="rojo" class="zebra">Ejercicios de jQuery</p>
+    <p id="amarillo" class="sinborde">Practicando con selectores</p>
+    <p id="verde" class="zebra">Quiero ser un párrafo verde</p>
+    <p class="sinborde">Quiero ser un párrafo</p>
+
+    <div id="caja">
+        <p>hola soy una caja</p>
+        <ul>
+            <li>elemento 1</li>
+            <li class="resaltado" id="elemento2">elemento 2</li>
+        </ul>
+        <span class="resaltado">Soy un span</span>
+    </div>
+</body>
+</html>

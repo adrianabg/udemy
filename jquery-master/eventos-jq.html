@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aprendiendo jQuery</title>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js-jq/02-eventos-jq.js"></script>
+    <style>
+        #caja{
+            width: 250px;
+            height: 250px;
+            border: 2px solid orange;
+            background: yellow;
+            transition: 300ms all;
+        }/*
+        #caja:hover{
+            background: orange;
+            cursor: pointer;
+        }*/
+        input{
+            padding: 10px;
+            width: 300px;
+            font-size: 20px;
+        }
+        #datos{
+            border: 4px dashed black;
+            padding: 10px;
+            width: 250px;
+            height: 50px;
+            margin-top: 10px;
+            display: none;
+        }
+        #sigueme{
+            width: 25px;
+            height: 25px;
+            position: absolute; /*Això és perquè es mogui lliurement sense que l'afectin els altres elements de la pàgina i es pot superposar.*/
+            display: block;
+            background: red;
+            opacity: 0.3;
+            border-radius: 999px;  
+        }
+    </style>
+</head>
+<body>
+    <h1>Apuntes y ejercicios con jQuery</h1>
+
+    <div id="sigueme"></div>
+    
+    <form action="#">
+        <input type="text" id="nombre">
+    </form>
+
+    <div id="datos"></div>
+
+    <br>
+
+
+    <div id="caja">
+        soy una caja
+    </div>
+</body>
+</html>
